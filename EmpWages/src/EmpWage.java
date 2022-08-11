@@ -28,12 +28,16 @@ class EmployeeWages{
         if(check == 1){
                 workingHr = 8;
                 }
-        else{
-                workingHr = 0;
+        else if(check ==2){
+                workingHr = 4;
+                }
+        else {
+                workingHr=0;
                 }
         EmployeeSalary =((workingHr*EmployeeWage)*workingDays);
         System.out.println("Employee is Present and His/Her Monthly Salary is " + EmployeeSalary);
         }
+      
         public static void main(String[] args) {
         System.out.println("Welcome To The Employee Wages Salary Stimulator");
         EmployeeWages.Attendance();
