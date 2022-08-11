@@ -55,11 +55,26 @@ class EmployeeWages{
                         break;
                         }
                 }
+        public static void Conditional(){
+                workingHr=8; workingDays=20;
+                for(int i = 1; i<= workingDays; i++) {
+                        int wages = ((EmployeeWage * workingHr) * i);
+                        System.out.println("Day :" + i + " Salary is :" + wages);
+                }
+                System.out.println("");
+                workingHr=4;
+                int workingHrs =100;
+                for(int j = 1; j <= workingHrs; j++){
+                        int wages2 = ((EmployeeWage*workingHr)*j);
+                        System.out.println( + j +" Hour" + "Salary is :" + wages2);
+                }
+        }
         public static void main(String[] args) {
         System.out.println("Welcome To The Employee Wages Salary Stimulator");
         EmployeeWages.Attendance();
         EmployeeWages.dailyWages();
         EmployeeWages.monthlyWages();
         EmployeeWages.switchCase();
+        EmployeeWages.Conditional();
         }
         }
